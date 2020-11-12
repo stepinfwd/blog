@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: auto;
+}
+.navbar {
+  padding: 10px 0;
+  background-color: rgb(1, 102, 80);
+  color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  background-position: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 550px;
 }
-
-.App-link {
-  color: #61dafb;
+.react-blog {
+  font-size: 70px;
+  font-weight: 900;
+  /* position: absolute; */
+  top: 10rem;
+  color: rgb(1, 102, 80);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.react-blog-1 {
+  font-size: 70px;
+  font-weight: 900;
+  position: absolute;
+  top: 22rem;
+  left: 60rem;
+  color: rgb(9, 100, 116);
 }

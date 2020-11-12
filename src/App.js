@@ -1,25 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useContext, useEffect } from "react";
+import Navbar from "./components/navbar/navbar";
+import "./App.css";
+import Hero from "./components/Hero/Hero";
+import BlogProvider from "./components/context/BlogProvider";
+import BlogContext from "./components//context/BlogContext";
+import blogContext from "./components//context/BlogContext";
+import PostList from "./components/PostList";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BlogProvider>
+      <div className="App">
+        <Navbar />
+
+        <Hero></Hero>
+        <PostList />
+      </div>
+    </BlogProvider>
   );
 }
 
